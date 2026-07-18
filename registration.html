@@ -2,32 +2,82 @@
 <html>
 <head>
     <title>Registration Page</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:300px;
+            margin:80px auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        input{
+            width:100%;
+            padding:8px;
+            margin:8px 0;
+            box-sizing:border-box;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:#007BFF;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+        p{
+            text-align:center;
+        }
+
+        a{
+            text-decoration:none;
+            color:#007BFF;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h2>Registration Form</h2>
+<div class="container">
 
-    <form action="index.html">
+    <h2>Register</h2>
 
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+    <form action="login.html">
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <input type="text" placeholder="Full Name" required>
 
-        <label>Username:</label><br>
-        <input type="text" name="username"><br><br>
+        <input type="email" placeholder="Email" required>
 
-        <label>Password:</label><br>
-        <input type="password" name="password"><br><br>
+        <input type="text" placeholder="Username" required>
 
-        <input type="submit" value="Register">
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Register</button>
 
     </form>
 
-    <br>
+    <p>Already have an account?<br>
+    <a href="login.html">Login Here</a></p>
 
-    <a href="login.html">Back to Login</a>
+</div>
 
 </body>
 </html>
